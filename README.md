@@ -1,3 +1,5 @@
 # Timestamp Microservice
 
-This is the boilerplate code for the Timestamp Microservice project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice
+-   listens at 4000
+-   return utc-format and unix-formate timestamp for the timestamp mentioned in any valid format
+-   return current time utc-format and unix-format timestamp if the URL param is absent
