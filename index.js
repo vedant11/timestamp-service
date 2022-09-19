@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
 
 app.get('/api/:date_str', function (req, res) {
 	let date_str = req.params.date_str;
-	let is_unix = date_str.split('-').length == 1 && date_str.length >= 1,
+	let is_unix = !isNaN(Number(date_str)),
 		date_format;
 	if (!date_str.length) {
 		date_format = new Date();
